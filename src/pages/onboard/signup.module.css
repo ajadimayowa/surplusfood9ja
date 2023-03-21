@@ -1,0 +1,11 @@
+@keyframes slideInLeft {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+.container {
+	animation: ease-in 1s slideInLeft;
+}
