@@ -15,7 +15,7 @@ export default function Routes() {
         },
         {
             path: '/',
-            element: <Home />
+            element: <Dashboard/>
         },
         {
             path: '/sign-up',
