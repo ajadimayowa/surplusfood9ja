@@ -5,7 +5,6 @@ import { Container, FormControl, Col, Row, FormGroup, FormLabel, InputGroup, But
 import logo from '../../assets/images/logo.svg';
 import Styles from './login.module.css';
 import { Formik } from "formik";
-import * as yup from 'yup'
 
 const LoginPage = () => {
     const [signUpSuccessModal, setSignUpSuccessModal] = useState(false);
