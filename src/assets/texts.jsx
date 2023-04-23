@@ -39,9 +39,9 @@ export const carouselDescriptions = [
 ]
 
 export const categoryList = [
-    { catImage: catOil, title: 'Refined healthy oil!', description: 'We take time to get you the oil you need, from the best sellers out there.' },
-    { catImage: catGrains, title: 'All types of Grains!', description: 'We have the best suppliers in the market for all type of grains.' },
-    { catImage: catPeppr, title: 'Premium Fresh pepper!!', description: 'Fresh pepper with quality taste to aid your cooking.' },
-    { catImage: catTubber, title: 'Buy quality tubbers!', description: 'Our tubbers are sourced from the finest farms around the country.' },
-    { catImage: catShopper, title: 'We can shop for you!', description: 'While you go about work, we will take care of your shopping.' }
+    { catImage: catOil, title: 'Refined healthy oil!', description: 'We take time to get you the oil you need, from the best sellers out there.',bgColor:'#F3FFFB',descColor:'#08A05C' },
+    { catImage: catGrains, title: 'All types of Grains!', description: 'We have the best suppliers in the market for all type of grains.',bgColor:'#FFFDEB',descColor:'#8E8635' },
+    { catImage: catPeppr, title: 'Premium Fresh pepper!!', description: 'Fresh pepper with quality taste to aid your cooking.',bgColor:'#FBFFE7',descColor:'#8DA900' },
+    { catImage: catTubber, title: 'Buy quality tubbers!', description: 'Our tubbers are sourced from the finest farms around the country.',bgColor:'#E9FFFB',descColor:'#007660' },
+    { catImage: catShopper, title: 'We can shop for you!', description: 'While you go about work, we will take care of your shopping.' ,bgColor:'#F3FFFB',descColor:'#8DA900'}
 ]
