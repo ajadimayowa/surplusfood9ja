@@ -7,32 +7,33 @@ import Dashboard from "./pages/dashboard/dashboard";
 
 
 
-export default function Routes() {
-    const router = createBrowserRouter(
-        [{
-            path: '/*',
-            element: <ErrorBoundry />
-        },
-        {
-            path: '/',
-            element: <Dashboard/>
-        },
-        {
-            path: '/sign-up',
-            element: <SignUpPage />
-        },
-        {
-            path: '/login',
-            element: <LoginPage />
-        },
-        {
-            path: '/dashboard',
-            element: <Dashboard />
-        }
+ export default function Routes() {
+    
+//     const router = createBrowserRouter(
+//         [{
+//             path: '/*',
+//             element: <ErrorBoundry />
+//         },
+//         {
+//             path: '/',
+//             element: <Dashboard/>
+//         },
+//         {
+//             path: '/sign-up',
+//             element: <SignUpPage />
+//         },
+//         {
+//             path: '/login',
+//             element: <LoginPage />
+//         },
+//         {
+//             path: '/dashboard',
+//             element: <Dashboard />
+//         }
 
-        ])
+//         ])
 
-    return (
-        <RouterProvider router={router} />
-    )
+//     return (
+//         <RouterProvider router={router} />
+//     )
 }
