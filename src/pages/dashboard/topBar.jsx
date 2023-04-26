@@ -4,7 +4,7 @@ import logo from '../../assets/images/logo.svg'
 import { useNavigate } from "react-router-dom";
 
 
-const TopBar = ()=>{
+const TopBar = ({handleOnBoard})=>{
     const navigate = useNavigate();
     return(
         <div className=" d-flex w-100 bg-white shadow-sm m-0" style={{position:'fixed', minHeight:'4em', zIndex:1}}>
@@ -28,7 +28,7 @@ const TopBar = ()=>{
                 </div>
                 <div className="w-50 d-flex justify-content-center">
                     <InputGroup className="d-flex justify-content-center align-items-center gap-3" style={{maxWidth:'15em'}} >
-                    <Button  onClick={() => navigate('/login')} className="px-3 text-secondary" variant="primary" style={{fontFamily:'Montserrat'}}>Sign in</Button>
+                    <Button  onClick={() => handleOnBoard()} className="px-3 text-secondary" variant="primary" style={{fontFamily:'Montserrat'}}>Sign in</Button>
                     </InputGroup>
                 </div>
             </Col>

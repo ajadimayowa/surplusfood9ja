@@ -13,8 +13,8 @@ function App() {
   return (
     <Router>
       <Routes>
+      <Route element = {<Dashboard/>} path='/'/>
         <Route element = {<ProtectedRoutes/>}>
-            <Route element = {<Dashboard/>} path='/'/>
             <Route element = {<Dashboard/>} path='/dashboard'/>
         </Route>
         <Route element = {<LoginPage/>} path='/login' />
