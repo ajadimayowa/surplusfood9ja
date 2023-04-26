@@ -12,6 +12,7 @@ import ServiceDescription from "../../sections/servicesDescription";
 import DefaultCarousel from "../components/carousel";
 import { categoryList } from "../../assets/texts";
 import CatCard from "../components/catCard";
+import OnBoardingModal from "../components/modals/onboardingModal";
 import logo from '../../assets/images/logo.svg'
 
 
@@ -21,7 +22,9 @@ export default function Dashboard() {
     const navigate = useNavigate();
     const carouselImages = [basket, pepper];
     const [carouselItem, setCarouselItem] = useState(0);
+    const [onBoardModal,setOnBoardModal] = useState(false);
     const carousel = [{ image: carouselImages[carouselItem], title: carouselDescriptions[carouselItem].title, description: carouselDescriptions[carouselItem].descriptions }]
+
 
 
     const carouselNext = (val) => {
@@ -43,13 +46,14 @@ export default function Dashboard() {
     }
     return (
         <Container fluid className={`${Style.container} d-flex flex-column min-vh-100 p-0 m-0`}>
+            <OnBoardingModal on={onBoardModal} off={()=>setOnBoardModal(false)}/>
             {/* side bar */}
 
             <SideBar />
             {/* Dashboard */}
             <div className="p-0 m-0" >
                 {/* top bar */}
-                <TopBar />
+                <TopBar handleOnBoard={()=>setOnBoardModal(true)} />
                 <Row className={`${Style.row1} w-100 m-0 d-flex align-items-center justify-content-center`} style={{ minHeight: '80vh' }}>
                     <Col xs={6} className="">
                         <Row className='w-75 bg-white rounded px-2 d-flex align-items-center m-0 mt-5' style={{ minHeight: '10em', maxHeight: '10em' }}>
@@ -89,7 +93,7 @@ export default function Dashboard() {
                             fingertips from the comfort of your own home.
                         </p>
                         <div className="mt-4 d-flex  justify-content-start">
-                            <Button onClick={() => navigate('/sign-up')} className="px-3 text-primary" variant="light" style={{ fontFamily: 'Montserrat' }}>Get Started</Button>
+                            <Button onClick={() => setOnBoardModal(true)} className="px-3 text-primary" variant="light" style={{ fontFamily: 'Montserrat' }}>Explore</Button>
                         </div>
                     </Col>
                     <Col xs={4} className="text-light">

@@ -86,7 +86,8 @@ const LoginPage = () => {
                                         >Sign up</p>
                                     </InputGroup>
 
-                                </form>)
+                                </form>
+                                )
                             }
                         </Formik>
                     </div>
